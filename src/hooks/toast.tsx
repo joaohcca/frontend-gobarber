@@ -25,7 +25,7 @@ const ToastProvider: React.FC = ({ children }) => {
   );
 };
 
-function useToast() {
+function useToast(): ToastContextData {
   const context = useContext(toastContext);
 
   if (!context) {
